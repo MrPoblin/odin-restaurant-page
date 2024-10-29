@@ -1,0 +1,143 @@
+@font-face {
+    font-family: 'birch_stdregular';
+    src: url('../fonts/birchstd-webfont.woff2') format('woff2'),
+         url('../fonts/birchstd-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* System Fonts with system-ui */
+body {
+    font-family: 'birch_stdregular', system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  }
+
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  /* 2. Remove default margin */
+  * {
+    margin: 0;
+  }
+  
+  body {
+    /* 3. Add accessible line-height */
+    line-height: 1.5;
+    /* 4. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  /* 5. Improve media defaults */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  /* 6. Inherit fonts for form controls */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  /* 7. Avoid text overflows */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  /* 8. Improve line wrapping */
+  p {
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+  
+  /*
+    9. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+*{
+    color: white;
+    text-shadow: 2px 2px 7px #000000, 2px 2px 7px #000000, 2px 2px 7px #000000, 2px 2px 7px #000000;
+}
+
+html, body {
+    height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+div{
+    font-size: 3rem;
+}
+
+header{
+    height: 6rem;
+    background-color: white;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.274);
+    z-index: 1;
+    align-items: center;
+    display: flex;
+    justify-content: end;
+}
+
+nav{
+    display: flex;
+    gap: 0rem;
+    padding-right: 0.5rem;
+}
+
+button{
+    font-size: 3.5rem;
+    background-color: black;
+    color: white;
+    border-radius: 0rem;
+    padding: 0rem 1rem;
+}
+
+#content{
+    gap: 10rem;
+    flex: 1;
+    overflow-y: auto; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, white 0%, white 50%, black 50%, black 100%);
+}
+
+h1{
+    font-size: 10rem;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.contact-div{
+    width: 50rem;
+    height: 30rem;
+    background: linear-gradient(to top, white 0%, white 50%, black 50%, black 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 4rem 3rem;
+}
+
+h2{
+    font-weight: 400;
+}
+
+img{
+    border-radius: 1rem;
+}
+
+.menu-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
